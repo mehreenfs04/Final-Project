@@ -1,57 +1,61 @@
-# Final-Project
-# Project Name
+# Financial Data Analysis
 
-A brief description of your project.
+This Python script performs financial data analysis on historical stock data, including calculating Simple Moving Averages (SMA) and Relative Strength Index (RSI). The analysis is based on a provided CSV file containing historical stock data.
 
 ## Table of Contents
 
-- [About](#about)
+- [Introduction](#introduction)
 - [Features](#features)
-- [Installation](#installation)
+- [Requirements](#requirements)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [File Descriptions](#file-descriptions)
 - [License](#license)
 
-## About
+## Introduction
 
-Briefly introduce your project. What is it about? What problem does it solve? Any key features?
+The Financial Data Analysis script is designed to analyze historical stock data stored in a CSV file. It calculates Simple Moving Averages (SMA) with a 5-day window and Relative Strength Index (RSI) with a 14-day window. The results are then written to separate CSV files for further analysis or visualization.
 
 ## Features
 
-Highlight the key features of your project.
+- Load historical stock data from a CSV file.
+- Calculate Simple Moving Averages (SMA) for a 5-day window.
+- Calculate Relative Strength Index (RSI) for a 14-day window.
+- Write SMA and RSI results to separate CSV files.
 
-- Feature 1
-- Feature 2
-- ...
+## Requirements
 
-## Installation
+- Python 3.x
+- Required Python packages are listed in `requirements.txt` and can be installed using:
 
-Provide instructions on how to install your project. Include any dependencies or prerequisites.
-
-```bash
-npm install
+  ```bash
+  pip install -r requirements.txt
 Usage
-Explain how to use your project. Provide code examples, screenshots, or any other relevant information.
+Clone the repository:
 
 bash
-Copy code
-npm start
-Contributing
-If you want others to contribute to your project, provide guidelines for how they can do so. Include information about coding standards, issue tracking, and the contribution process.
+git clone https://github.com/your-username/financial-data-analysis.git
+cd financial-data-analysis
+Install dependencies:
 
+bash
+
+pip install -r requirements.txt
+Run the script:
+
+bash
+
+python financial_analysis.py
+The script will load historical data from the provided CSV file ("orcl.csv" in this example), calculate SMA and RSI, and save the results in "orcl-sma.csv" and "orcl-rsi.csv," respectively.
+
+File Descriptions
+financial_analysis.py: The main Python script containing functions for loading data, calculating SMA and RSI, and writing results to CSV files.
+orcl.csv: Example CSV file containing historical stock data.
+orcl-sma.csv: Output file containing Simple Moving Averages (SMA) results.
+orcl-rsi.csv: Output file containing Relative Strength Index (RSI) results.
 License
-Specify the license under which your project is distributed.
-
 This project is licensed under the MIT License.
 
-sql
-Copy code
-
-Make sure to replace placeholders like "Project Name," "Feature 1," etc., with the actual details of your project. Additionally, if your project uses a specific license, update the license section accordingly.
-
-Remember, a good README is concise, informative, and helps users and contributors quickly understand your project.
+vbnet
 
 
-
-
-
+Make sure to replace placeholder names like "financial_analysis.py" and "orcl.csv" w
